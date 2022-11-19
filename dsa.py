@@ -1,4 +1,7 @@
 # DSA reverse string
 
-r = "string"
+def reverse(string):
+    string = string[::-1]
+    return string
 
+print(reverse("shazeb"))
