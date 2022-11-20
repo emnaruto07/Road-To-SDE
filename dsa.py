@@ -23,11 +23,25 @@
 
 # n=3
 # rec(n)
-
+# applying rec on factorial
 def rec(n):
     if n == 1:
         return n
     else:
         return n * rec(n-1)
 n=5
-print(rec(n))
+# print(rec(n))
+
+# applying rec on fibonacci
+
+def fib(n):
+    #making default case
+    if n <= 1:
+        return n
+    else:
+        #adding last two values
+        return (fib(n-1) + fib(n-2))
+
+n = 10
+
+print(fib(n))
