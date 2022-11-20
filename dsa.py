@@ -42,6 +42,12 @@ def fib(n):
         #adding last two values
         return (fib(n-1) + fib(n-2))
 
-n = 10
+count = 12
 
-print(fib(n))
+if n <=0:
+    print("xyz")
+else:
+    sum = 0
+    for i in range(count):
+        sum = sum + fib(i)
+    print(sum)
